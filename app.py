@@ -18,7 +18,7 @@ y=[]
 @app.route('/', methods=['GET', 'POST'])
 #@cross_origin()
 def index():
-  prediction=""
+  prediction="wait"
   if request.method=="POST":
     f = request.files['file']
     # Save the file to ./uploads
@@ -61,7 +61,7 @@ def index():
 @app.route('/covidPage.html', methods=['GET', 'POST'])
 #@cross_origin()
 def predict():
-  prediction=""
+  prediction="wait"
   if request.method=="POST":
     f = request.files['file']
     # Save the file to ./uploads
@@ -102,7 +102,7 @@ def predict():
 @app.route('/brainTumourPage.html', methods=['GET', 'POST'])
 #@cross_origin()
 def predict2():
-  prediction=""
+  prediction="wait"
   if request.method=="POST":
     f = request.files['file']
     # Save the file to ./uploads
