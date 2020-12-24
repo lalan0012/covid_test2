@@ -1,5 +1,5 @@
 from flask import Flask
-app = Flask(__name__) #,template_folder="/content/COVID-Brain-Tumour-Project/project folder")
+app = Flask(__name__,static_folder="myCSS") #,template_folder="/content/COVID-Brain-Tumour-Project/project folder")
 import numpy as np
 from keras.preprocessing import image
 from keras.models import load_model
